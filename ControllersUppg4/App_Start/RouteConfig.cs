@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace JorgenN
+namespace ControllersUppg4
 {
     public class RouteConfig
     {
@@ -16,8 +16,10 @@ namespace JorgenN
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Stores", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Sprite", action = "Hexa", id = UrlParameter.Optional }
             );
+
+           
         }
     }
 }
